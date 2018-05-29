@@ -24,7 +24,7 @@ const todo = (state, action) => {
 };
 
 // handles how the state array of todos are updated
-export const todos = (state = [], action) => {
+const todos = (state = [], action) => {
   switch (action.type) {
     case ADD_TODO : 
       return [
@@ -38,6 +38,8 @@ export const todos = (state = [], action) => {
   }
 };
 
+
+export default todos;
 
 
 
